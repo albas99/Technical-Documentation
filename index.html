@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        #nav-bar{
+            position: fixed;
+            min-width: 290px;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 300px;
+            height: 100%;
+            border-right: solid;
+            border-color: rgba(0, 22, 22, .4);
+        }
+
+        #nav-bar header{
+            margin: 10px;
+        }
+
+        #nav-bar a{
+            display: flex;
+            padding: 40px;
+            text-decoration: none;
+            color: #000;
+            font-size: 2rem;
+            border-top: 1px solid;
+        }
+
+        #main-doc{
+            margin-left:300px ;
+        }
+
+        header{
+            font-size: 2.6rem;
+        }
+
+        @media only screen and (max-width: 750px) {
+            #nav-bar{
+                display: none;
+            }
+
+            #main-doc{
+                margin-left: 30px;
+            }
+            
+        }
+
+    </style>
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+      <nav id="nav-bar">
+          <header>Web Documentation</header>
+          <a href="#introduction" class="nav-link">Introduction</a>
+          <a href="#prerequisites" class="nav-link">Prerequisites</a>
+          <a href="#html_and_css" class="nav-link">HTML and CSS</a>
+          <a href="#javascript" class="nav-link">JavaScript</a>
+          <a href="#summary" class="nav-link">Summary</a>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>
+          It's a lot of work to create a professional website, so if you're new
+          to web development, we encourage you to start small. You won't build
+          another Facebook right away, but it's not hard to get your own simple
+          website online, so we'll start there.
+        </p>
+        <p>
+          By working through the articles listed below in order, you will go
+          from nothing to getting your first webpage online. Let's begin our
+          journey!
+        </p>
+      </section>
+      <section class="main-section" id="prerequisites">
+        <header>Prerequisites</header>
+        <p>
+          You don't need any previous knowledge to start this course. All you
+          need is a computer that can run modern web browsers, an internet
+          connection, and a willingness to learn.
+        </p>
+        <p>
+          If you are not sure if front-end web development is for you, and/or
+          you want a gentle introduction before starting a longer and more
+          complete course, work through our Getting started with the web module
+          first.
+        </p>
+      </section>
+      <section class="main-section" id="html_and_css">
+        <header>HTML and CSS</header>
+        <p>
+          Hypertext Markup Language (HTML) is the code that you use to structure
+          your web content and give it meaning and purpose.
+        </p>
+        <p>
+          For example, is my content a set of paragraphs or a list of bullet
+          points? Do I have images inserted on my page? Do I have a data table?
+          Without overwhelming you, HTML basics provides enough information to
+          make you familiar with HTML.
+        </p>
+        <p>Example of HTML</p>
+        <pre>
+                <code>
+                   <p>&lt;p&gt;My cat is &lt;strong&gt;very&lt;&sol;strong&gt; grumpy.&lt;&sol;p&gt;</p>
+                </code>
+            </pre>
+        <p>
+          Cascading Stylesheets (CSS) is the code that you use to style your
+          website. For example, do you want the text to be black or red? Where
+          should content be drawn on the screen? What background images and
+          colors should be used to decorate your website? CSS basics takes you
+          through what you need to get started.
+        </p>
+        <p><li>Link HTML with CSS</li></p>
+        <p>&lt;link href="styles/style.css" rel="stylesheet&gt;</p>
+        <p>Example of CSS</p>
+        <code>
+          p { color: red; }
+        </code>
+      </section>
+      <section class="main-section" id="javascript">
+        <header>JavaScript</header>
+        <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+       <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+       <ul>
+           <li><p>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</p></li>
+    <li><p>JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</p></li></ul>
+    <p>Below are some JavaScript examples</p>
+    <code>
+        function greetMe(yourName) { alert("Hello " + yourName); }
+greetMe("World");
+    </code>
+    <br></br>
+    <code>
+        var x = 42.
+    </code>
+    <br></br>
+    <code>
+        let y = 13.
+    </code>
+      </section>
+      <section class="main-section" id="summary">
+        <header>Summary</header>
+        <p>Once you have finished writing the code and organizing the files that make up your website, you need to put it all online so people can find it. Publishing your sample code describes how to get your simple sample code online with minimum effort.</p>
+      </section>
+    </main>
+  </body>
+</html>
